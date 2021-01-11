@@ -1,0 +1,5 @@
+(dict "name" "Bobby"
+      "job" "Unemployed"
+      "numbers" (list 1 10 40)
+      "pets" (dict "cat" "Joanne"
+                   "dog" "Mercy"))

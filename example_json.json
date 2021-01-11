@@ -1,0 +1,9 @@
+{
+	"name": "Bobby",
+	"job": "Unemployed",
+	"numbers": [1, 10, 40],
+	"pets": {
+		"cat": "Joanne",
+                "dog": "Mercy"
+	}
+}
