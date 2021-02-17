@@ -1,13 +1,18 @@
 '''
 S-Expression object notation/syntax module.
 
-* Note: in this module, "s" and "sexpr" are abbreviations for "S-Expression".
+* Note: in this file, "s" and "sexpr" are abbreviations for "S-Expression".
 '''
 
 import pyparsing
-from pairwise import pairwise
 
 str_delimiters = '\'"'
+
+def pairwise (iterable):
+    '''Iterate in pairs, such that [a, b, c, d, ...] becomes [(a, b), (c, d), ...]
+    * See also: https://stackoverflow.com/questions/5389507/iterating-over-every-two-elements-in-a-list'''
+    i = iter(iterable)
+    return zip(i, i)
 
 def from_s_list (list_):
     method = list_[0]
